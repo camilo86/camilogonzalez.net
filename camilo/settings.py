@@ -76,13 +76,13 @@ USE_L10N = True
 
 USE_TZ = True
 
-MEDIA_ROOT = ''
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 STATIC_URL = '/static/'
 
-STATICFILES_DIR = (
-    'C:/Users/camil_000/Documents/Docs/camilo/static/',
+STATICFILES_DIRS = (
+    'C:/Users/camil_000/Documents/Docs/camilo/static',
 )
 
 STATICFILES_FINDERS = (
@@ -98,5 +98,5 @@ TEMPLATE_LOADERS = (
 )
 
 TEMPLATE_DIRS = (
-    'C:/Users/camil_000/Documents/Docs/camilo/templates/',
+    'C:/Users/camil_000/Documents/Docs/camilo/templates',
 )
