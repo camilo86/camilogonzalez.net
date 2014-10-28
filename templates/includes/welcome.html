@@ -1,0 +1,15 @@
+{% load staticfiles %}
+<div id="ww">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 centered">
+                <img src="{% static "img/camilo-gonzalez.png" %}" alt="Camilo">
+                <h1>Hey, this is Camilo</h1>
+                <p>Hello! This is Camilo, a young high school student and programmer in Boston, MA. In here you will be able to find most of the projects I've worked on. Feel free to leave me suggestions or question in the <a href="{% url 'contactMe' %}">Contact me</a> page</p>
+				<a href="https://twitter.com/camilo_g86" class="twitter-follow-button" data-show-count="false">Follow @camilo_g86</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+				<iframe src="http://ghbtns.com/github-btn.html?user=camilo86&type=follow" allowtransparency="true" frameborder="0" scrolling="0" width="132" height="20"></iframe>
+			</div>
+        </div>
+    </div>
+</div>
