@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load staticfiles %}
+    {% include 'includes/head.html' %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camilo | {{ object.title }}</title>
+  </head>
+
+  <body>
+    {% include 'includes/navbar.html' %}
+    {% include 'includes/blogPost.html' %}
+	  {% include 'includes/footer.html' %}
+  </body>
+</html>

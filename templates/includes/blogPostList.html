@@ -1,0 +1,19 @@
+{% load staticfiles %}
+{% load django_markdown %}
+
+{% block blog_entries %}
+{% for object in object_list %}
+<div class="post" id="grey">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2">
+        <h2>{{ object.title }}</h2>
+        <p class="meta"><bd>{{ object.created }} | {{ object.tags.all|join:", " }}</bd></p>
+        <p>{{ object.body|markdown|truncatechars:300 }}</p>
+        <p><a href="{% url "entry_detail" slug=object.slug %}">Keep reading...</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endfor %}
+{% endblock %}
